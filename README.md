@@ -23,7 +23,7 @@ alias v='nvim'
 ``````
 #Install
 ```bash 
-mv ~/.config/nvim{,.yetone-backup} || true
+mv ~/.config/nvim{,.jinzaizhichi-bak} || true
 
 git clone https://github.com/jinzaizhichi/jinzaizhichi-nvim-config.git ~/.config/nvim
 
