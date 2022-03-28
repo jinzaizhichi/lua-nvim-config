@@ -1,4 +1,4 @@
-#Insall neovim：
+# Insall neovim：
 ```bash
 ubuntu系统:
 apt 安装 Neovim，具体方法如下：
@@ -21,7 +21,7 @@ alias vim='nvim'
 alias vi='nvim'
 alias v='nvim'
 ``````
-#Install
+# Install
 ```bash 
 mv ~/.config/nvim{,.jinzaizhichi-bak} || true
 
