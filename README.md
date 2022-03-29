@@ -29,3 +29,8 @@ git clone https://github.com/jinzaizhichi/jinzaizhichi-nvim-config.git ~/.config
 
 vim +PackerInstallt
 ```
+# 注意，若想让neovim共享系统剪贴板，还需要下载一个插件
+```bash
+sudo apt install xsel
+
+```
