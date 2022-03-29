@@ -18,6 +18,50 @@ vim.o.syntax = "enable"
 vim.o.number = true
 --是否显示相对行号
 vim.o.relativenumber = true
---设定
+--设定光标上下两侧最少保留的屏幕行数
+vim.o.scrolloff = 10
+--是否支持鼠标操作
+vim.o.mouse ="a"
+--是否启用系统剪贴板
+vim.o.clipboard = "unnameplus"
+--是否开启备份文件
+vim.o.backup = false
+--是否开启交换文件
+vim.o.swapfile = false
+--是否特殊显示空格等字符
+vim.o.list = true
+--是否开启自动缩进
+vim.o.autoindent = true
+--设定自动缩进的策略为plugin
+vim.o.filetype = "plugin"
+--是否开启高亮搜索
+vim.o.hlsearch = true
+--是否在插入括号时短暂跳转到另一半括号上
+vim.o.showmatch = true
+--是否开启命令行补全
+vim.o.wildmenu = true
+--是否搜素时忽略大小写
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
