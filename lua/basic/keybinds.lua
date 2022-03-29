@@ -20,7 +20,12 @@ vim.keybinds.gmap("i","jj","<Esc>",vim.keybinds.opts)
 
 
 --用 H 和 L 代替  ^ 与 $
-vim.keybinds.gmap("n","H","^",vim.keybinds,opts)
+vim.keybinds.gmap("n","H","^",vim.keybinds.opts)
 vim.keybinds.gmap("v","H","^",vim.keybinds.opts)
-vim.keybinds.gmap("n","L","$",vim.keybinds.gmap)
-vim.keybinds.gmap("v","L","$",vim.keybinds.gmap)
+vim.keybinds.gmap("n","L","$",vim.keybinds.opts)
+vim.keybinds.gmap("v","L","$",vim.keybinds.opts)
+
+
+--C-u和 C-d 调整为上下滑动10行而不是半页
+vim.keybinds.gmap("n","<C-u>","10k",vim.keybinds.opts)
+vim.keybinds.gmap("n","<C-d>","10j",vim.keybinds.opts)
