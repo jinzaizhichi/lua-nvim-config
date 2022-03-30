@@ -1,4 +1,4 @@
---lua缩进配置
+--lua缩进配置,设置注释参考lua.lua
 vim.bo.expandtab = true
 vim.bo.shiftwidth = 4
 vim.bo.tabstop = 4
