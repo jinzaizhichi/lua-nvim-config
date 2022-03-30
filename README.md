@@ -27,7 +27,7 @@ mv ~/.config/nvim{,.jinzaizhichi-bak} || true
 
 git clone https://github.com/jinzaizhichi/jinzaizhichi-nvim-config.git ~/.config/nvim
 
-vim +PackerInstallt
+vim +PackerInstall
 ```
 # Note that if you want neovim to share the system clipboard, you also need to download a plugin
 ```bash
