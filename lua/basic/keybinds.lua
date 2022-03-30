@@ -40,5 +40,15 @@ vim.keybinds.gmap("i","<A-l>","<right>",vim.keybinds.opts)
 
 --修改分屏大小
 vim.keybinds.gmap("n","<C-up>","<cmd>res +1<CR>",vim.keybinds.opts)
+vim.keybinds.gmap("n","<C-down>","<cmd>res -1<CR>",vim.keybinds.opts)
+vim.keybinds.gmap("n","<C-left>","<cmd>vertical resize-1<CR>",vim.keybinds.opts)
+vim.keybinds.gmap("n","<C-right>","<cmd>vertical resize+1<CR>",vim.keybinds.opts)
+
+--正常模式下按ESC 取消高亮显示
+vim.keybinds.gmap("n","<ESC>", ":nohlsearch<CR>",vim.keybinds.opts)
+
+
+--通过leader cs切换拼写检查
+vim.keybinds.gmap("n","<leader>cs","<cmd>set spell!<CR>",vim.keybinds.opts)
 
 
