@@ -21,7 +21,10 @@ packer.startup(
             use {
                 "yianwillis/vimcdoc",
             }
-
+            --nvim-tree            
+            use {
+                "kyazdani42/nvim-tree"
+            }
 
         end,
         --使用浮动窗口

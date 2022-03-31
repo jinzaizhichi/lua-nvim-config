@@ -23,7 +23,7 @@ vim.o.scrolloff = 10
 --是否支持鼠标操作
 vim.o.mouse ="a"
 --是否启用系统剪贴板
-vim.o.clipboard = "unnameplus"
+vim.o.clipboard = "unnamedplus"
 --是否开启备份文件
 vim.o.backup = false
 --是否开启交换文件
@@ -54,28 +54,4 @@ vim.o.foldenable= false
 vim.o.foldmethod = "indent"
 --指定代码折叠的最高级为100
 vim.o.foldlevel = 100
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
