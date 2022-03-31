@@ -21,7 +21,7 @@ packer.startup(
             use {
                 "yianwillis/vimcdoc",
             }
-            --nvim-tree            
+            --nvim-tree
             use {
                 "kyazdani42/nvim-tree"
             }
