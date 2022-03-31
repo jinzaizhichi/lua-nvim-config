@@ -16,14 +16,21 @@ packer.startup(
 
 
             --安装其他插件
-            
             --中文文档
             use {
                 "yianwillis/vimcdoc",
             }
             --nvim-tree
             use {
-                "kyazdani42/nvim-tree"
+                "kyazdani42/nvim-tree.lua",
+                requires = {
+                    --依赖一个图标插件
+                    "kyazdani42/nvim-web-devicons"
+                },
+                config = function()
+                    --插件加载完成后自动运行lua/con/nivm-tree.lua
+                    require("conf.nvim-tree")
+                end
             }
 
         end,
