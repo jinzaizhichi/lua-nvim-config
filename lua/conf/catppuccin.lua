@@ -2,7 +2,7 @@
 
 --https://github.com/catppuccin/nvim
 
-require("catppuccin"),setup(
+require("catppuccin").setup(
     {
         --透明背景
         transparent_background = vim.g.background_transparency,
