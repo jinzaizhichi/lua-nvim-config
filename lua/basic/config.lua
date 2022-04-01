@@ -8,3 +8,5 @@ vim.g.FcitxToggleInput = function ()
 end
 
 vim.cmd("autocmd InsertLeave * call FcitxToggleInput()")
+--是否透明背景
+vim.g.background_transparency = true
