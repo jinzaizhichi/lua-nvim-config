@@ -46,7 +46,14 @@ packer.startup(
                    require("conf.catppuccin")
                 end
             }
-
+            --炫酷的状态栏插件
+            use {
+                "windwp/windline.nvim",
+                config = function()
+                    --插件加载完成后自动运行lua/conf/windline.lua文件中的代码
+                    require("conf.windline")
+                end
+            }
 
         end,
         --使用浮动窗口
