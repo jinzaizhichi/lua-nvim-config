@@ -55,6 +55,19 @@ packer.startup(
                 end
             }
 
+
+            --为了让状态栏显示git状态，所以这个插件是必须的
+            use {
+                "lewis6991/gitsigns.nvim",
+                require = {
+                    --依赖此插件（一款lua开发使用的插件）
+                    "nvim-lua/plenary.nvim"
+
+                },
+                config = function()
+                    require("conf.gitsigns").setup()
+                end
+            }
         end,
         --使用浮动窗口
         config = {
