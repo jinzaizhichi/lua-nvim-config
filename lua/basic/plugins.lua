@@ -65,7 +65,7 @@ packer.startup(
 
                 },
                 config = function()
-                    require("conf.gitsigns").setup()
+                    require("gitsigns").setup()
                 end
             }
         end,
