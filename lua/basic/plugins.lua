@@ -59,7 +59,7 @@ packer.startup(
             --为了让状态栏显示git状态，所以这个插件是必须的
             use {
                 "lewis6991/gitsigns.nvim",
-                require = {
+                requires = {
                     --依赖此插件（一款lua开发使用的插件）
                     "nvim-lua/plenary.nvim"
 
