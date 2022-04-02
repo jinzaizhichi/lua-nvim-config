@@ -32,13 +32,17 @@ packer.startup(
                     require("conf.nvim-tree")
                 end
             }
+            --set:.editconfig
+            use {
+                "editorconfig/editorconfig-vim"
+            }
             --优秀的暗色主题
             use {
                 "catppuccin/nvim",
                 --改个别名，应为他的名字是nvim,可能会冲突
                 as = "catppuccin",
                 config = function()
-                   --插件加载后自动运行lua/conf/catppuccin.lua文件中的代码 
+                   --插件加载后自动运行lua/conf/catppuccin.lua文件中的代码
                    require("conf.catppuccin")
                 end
             }
