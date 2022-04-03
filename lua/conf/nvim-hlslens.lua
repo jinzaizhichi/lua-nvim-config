@@ -11,7 +11,7 @@ vim.keybinds.gmap(
 vim.keybinds.gmap(
       "n",
       "N",
-      "<Cmd>execute('normal'.v:count1.'N')<CR><Cmd>lua require('hlslens').start()<CR>",
+      "<Cmd>execute('normal!'.v:count1.'N')<CR><Cmd>lua require('hlslens').start()<CR>",
       vim.keybinds.opts
 )
 vim.keybinds.gmap("n","*","*<Cmd>lua require('hlslens').start()<CR>",vim.keybinds.opts)
