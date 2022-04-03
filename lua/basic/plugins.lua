@@ -68,6 +68,17 @@ packer.startup(
                     require("gitsigns").setup()
                 end
             }
+            --支持LSP状态的buffer栏
+            use {
+                "akinsho/bufferline.nvim",
+                require = {
+                    "famiu/bufdelete.nvim"
+              },
+                config = function()
+                require("conf.bufferline")
+
+              end
+            }
         end,
         --使用浮动窗口
         config = {
