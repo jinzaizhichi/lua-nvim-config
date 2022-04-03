@@ -30,7 +30,7 @@ require("bufferline").setup(
           },
 
           --显示LSP报错信息
-          diagnostics_indicator = function (count,level,diagnostics_dict,context)
+          diagnostics_indicator = function(count, level, diagnostics_dict, context)
             local s = ""
             for e, n in pairs(diagnostics_dict) do
                  local sym = e == "error" and " " or (e == "warning" and " " or "")
@@ -45,7 +45,7 @@ require("bufferline").setup(
 )
 
 --关闭当期buffer，由bufdelete插件所提供的方法
-vim.keybinds.gmap("n","<C-q>","<cmd>Bdelete!<CR>",vim.keybinds.opts)
+vim.keybinds.gmap("n","<C-q>","<cmd>Bufdelete!<CR>",vim.keybinds.opts)
 --切换上一个缓冲区
 vim.keybinds.gmap("n","<C-h>","<cmd>BufferLineCyclePrev<CR>",vim.keybinds.opts)
 --切换到下一个缓冲区
