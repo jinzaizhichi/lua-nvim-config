@@ -45,7 +45,7 @@ require("bufferline").setup(
 )
 
 --关闭当期buffer，由bufdelete插件所提供的方法
-vim.keybinds.gmap("n","<C-q>","<cmd>BufDelete<CR>",vim.keybinds.opts)
+vim.keybinds.gmap("n","<C-q>","<cmd>bdelete!<CR>",vim.keybinds.opts)
 --切换上一个缓冲区
 vim.keybinds.gmap("n","<C-h>","<cmd>BufferLineCyclePrev<CR>",vim.keybinds.opts)
 --切换到下一个缓冲区
