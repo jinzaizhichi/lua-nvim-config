@@ -79,6 +79,13 @@ packer.startup(
 
               end
             }
+            use {
+                  "kevinhwang91/nvim-hlsens",
+                  config = function ()
+                      require("conf.nvim-hlslens")
+
+                  end
+            }
         end,
         --使用浮动窗口
         config = {
