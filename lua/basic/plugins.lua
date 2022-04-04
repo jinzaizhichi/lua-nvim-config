@@ -81,7 +81,7 @@ packer.startup(
             }
             --搜索文档
             use {
-                  "kevinhwang91/nvim-hlsens",
+                  "kevinhwang91/nvim-hlslens",
                   config = function ()
                       require("conf.nvim-hlslens")
 
