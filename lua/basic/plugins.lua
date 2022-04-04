@@ -79,12 +79,17 @@ packer.startup(
 
               end
             }
+            --搜索文档
             use {
                   "kevinhwang91/nvim-hlsens",
                   config = function ()
                       require("conf.nvim-hlslens")
 
                   end
+            }
+            --自动计时插件
+            use {
+              "wakatime/vim-wakatime"
             }
         end,
         --使用浮动窗口
