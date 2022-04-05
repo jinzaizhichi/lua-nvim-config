@@ -94,7 +94,7 @@ packer.startup(
             --显示缩进线
             use {
                   "lukas-reineke/indent-blankline.nvim"
-                  config = function()
+                   config = function()
                       require("conf.indent-blankline ")
                   end
 
