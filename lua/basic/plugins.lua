@@ -99,6 +99,12 @@ packer.startup(
                   end
 
             }
+            --自动匹配括号
+            use {
+              "windwp/nvim-autopairs",
+               config = function()
+                  require("conf.nvim-autopairs")
+            }
         end,
         --使用浮动窗口
         config = {
