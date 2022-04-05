@@ -106,6 +106,13 @@ packer.startup(
                   require("conf.nvim-autopairs")
                 end
             }
+            --快速更改单词
+            use {
+              "AndrewRadev/switch.vim",
+              config = function()
+                require("conf.switch")
+              end
+            }
         end,
         --使用浮动窗口
         config = {
