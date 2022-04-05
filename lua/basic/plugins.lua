@@ -91,6 +91,14 @@ packer.startup(
             use {
               "wakatime/vim-wakatime"
             }
+            --显示缩进线
+            use {
+                  "lukas-reineke/indent-blankline.nvim"
+                  config = function()
+                      require("conf.indent-blankline ")
+                  end
+
+            }
         end,
         --使用浮动窗口
         config = {
