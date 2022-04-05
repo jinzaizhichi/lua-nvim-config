@@ -104,6 +104,7 @@ packer.startup(
               "windwp/nvim-autopairs",
                config = function()
                   require("conf.nvim-autopairs")
+                end
             }
         end,
         --使用浮动窗口
