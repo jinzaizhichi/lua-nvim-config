@@ -26,8 +26,8 @@ for _, value in ipairs(switch_words) do
   --全大写
   table.insert(push_words,{string.upper(w1),string.upper(w2)})
   --首字母大写，%1 代表小写字母，只取第一个
-  w1, _ =string.gsub(w1,"^%1",string.upper)
-  w2, _ =string.gsub(w2,"^%1",string.upper)
+  w1, _ =string.gsub(w1,"^%l",string.upper)
+  w2, _ =string.gsub(w2,"^%l",string.upper)
   table.insert(push_words,{w1,w2})
 
 end
