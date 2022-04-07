@@ -24,7 +24,17 @@ for _, value in ipairs(switch_words) do
   --全小写
   table.insert(push_words,value)
   --全大写
-  table.insert(push_words,value)
+  table.insert(push_words,{string.upper(w1),string.upper(w2)})
   --首字母大写，%1 代表小写字母，只取第一个
-  w1, _ =string.gsub()
+  w1, _ =string.gsub(w1,"^%1",string.upper)
+  w2, _ =string.gsub(w2,"^%1",string.upper)
+  table.insert(push_words,{w1,w2})
+
 end
+
+
+--放入全局变量
+vim.g.switch_custom_definitions = push_words
+
+--快速取反义词，如true 变为 false
+vim.keybinds.gmap("n","gs",":switch<CR>",vim.keybinds.opts)
