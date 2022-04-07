@@ -120,6 +120,20 @@ packer.startup(
                   require("conf.hop")
               end
             }
+            --包裹修改
+            use {
+              "ur4ltz/surround.nvim",
+              config = function()
+                 require("conf.surround")
+              end
+            }
+            --显示光标下相同词汇
+            use {
+              "RRethy/vim-illuminate",
+              config = function ()
+                 require("conf.vim-illuminate")
+              end
+            }
         end,
         --使用浮动窗口
         config = {
