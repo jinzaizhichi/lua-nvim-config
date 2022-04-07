@@ -4,11 +4,11 @@
 --更多的内置样式，参见：
 --https://github.com/windwp/windline/tree/master/lua/wlsample
 
-local windline = require('windline')
-local effects = require('wlanimation.effects')
-local HSL = require('wlanimation.utils')
-require('wlsample.airline')
-local animation = require('wlanimation')
+local windline = require("windline")
+local effects = require("wlanimation.effects")
+local HSL = require("wlanimation.utils")
+require("wlsample.airline")
+local animation = require("wlanimation")
 
 
 local is_run = false
