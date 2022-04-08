@@ -134,6 +134,15 @@ packer.startup(
                  require("conf.vim-illuminate")
               end
             }
+
+
+            --拼写检查器
+            use {
+              "lewis6991/spellsitter.nvim",
+                config = function()
+                    require("conf.spellsitter")
+                end
+            }
         end,
         --使用浮动窗口
         config = {
