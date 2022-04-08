@@ -4,7 +4,7 @@
 
 
 require("spellstitter").setup(
-
-      enable = true
-
+      {
+         enable = true
+      }
 )
