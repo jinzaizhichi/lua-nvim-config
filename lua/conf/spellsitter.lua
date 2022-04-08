@@ -3,7 +3,7 @@
 --https://github.com/lewis6991/spellsitter.nvim
 
 
-require("spellstitter").setup(
+require("spellsitter").setup(
       {
          enable = true
       }
