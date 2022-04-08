@@ -71,9 +71,10 @@ packer.startup(
             --支持LSP状态的buffer栏
             use {
                 "akinsho/bufferline.nvim",
+                tag = "*",
                 require = {
                     "famiu/bufdelete.nvim"
-              },
+                   },
                 config = function()
                 require("conf.bufferline")
 
