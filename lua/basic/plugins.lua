@@ -150,8 +150,13 @@ packer.startup(
                 config = function()
                   require("conf.AutoSave")
                 end
-
-
+            }
+            --自动恢复光标位置
+            use {
+                "ethanholz/nvim-lastplace",
+                 config = function()
+                  require("conf.nvim-lastplace")
+              end
             }
         end,
         --使用浮动窗口
