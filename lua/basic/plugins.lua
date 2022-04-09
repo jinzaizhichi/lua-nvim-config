@@ -158,6 +158,13 @@ packer.startup(
                   require("conf.nvim-lastplace")
               end
             }
+            --自动会话管理
+            use {
+                  "rmagatti/auto-session",
+                  config = function()
+                      require("conf.auto-session")
+                  end
+            }
         end,
         --使用浮动窗口
         config = {
