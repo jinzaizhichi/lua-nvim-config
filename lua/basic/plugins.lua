@@ -144,6 +144,15 @@ packer.startup(
                     require("conf.spellsitter")
                 end
             }
+            --自动保存
+            use {
+                "Pocco81/AutoSave.nvim",
+                config = function()
+                  require("conf.AutoSave")
+                end
+
+
+            }
         end,
         --使用浮动窗口
         config = {
