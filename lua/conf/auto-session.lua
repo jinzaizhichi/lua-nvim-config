@@ -20,3 +20,12 @@ require("auto-session").setup(
 
     }
 )
+
+
+--在每次退出neovim时自动保存会话
+--其实该插件不加这个自动命令也能
+--自动保存会话，但总感觉不联想
+--所以这里我自己加了自动命令
+vim.cmd([[
+    autocmd vimLeavePre * silent! :SaveSession
+]])
