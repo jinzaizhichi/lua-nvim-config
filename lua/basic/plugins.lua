@@ -181,7 +181,7 @@ packer.startup(
             use {
               "terryma/vim-multiple-cursors",
               config = function()
-                  require("conf.nvim-multiple-cursors")
+                  require("conf.vim-multiple-cursors")
               end
             }
         end,
