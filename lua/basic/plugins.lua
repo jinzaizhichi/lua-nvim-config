@@ -177,6 +177,13 @@ packer.startup(
                       require("conf.nvim-spectre")
                   end
             }
+            --多光标模式
+            use {
+              "terryma/vim-multiple-cursors",
+              config = function()
+                  require("conf.nvim-multiple-cursors")
+              end
+            }
         end,
         --使用浮动窗口
         config = {
