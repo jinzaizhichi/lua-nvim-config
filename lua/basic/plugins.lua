@@ -198,6 +198,13 @@ packer.startup(
                    require("conf.nvim-colorizer")
                   end
              }
+             --内置终端
+             use {
+                  "akinsho/toggleterm.nvim",
+                  config = function()
+                      require("conf.toggleterm")
+                  end
+             }
         end,
         --使用浮动窗口
         config = {
