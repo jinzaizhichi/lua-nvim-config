@@ -191,6 +191,13 @@ packer.startup(
                       require("conf.nvim-scrollbar")
                   end
              }
+             --显示网页色
+             use {
+                  "norcalli/nvim-colorizer.lua",
+                  config = function()
+                   require("conf.nvim-colorizer")
+                  end
+             }
         end,
         --使用浮动窗口
         config = {
