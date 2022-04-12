@@ -184,6 +184,13 @@ packer.startup(
                   require("conf.vim-multiple-cursors")
               end
             }
+          --显示滚动条
+             use {
+                  "petertriho/nvim-scrollbar",
+                  config = function()
+                      require("conf.nvim-scrollbar")
+                  end
+             }
         end,
         --使用浮动窗口
         config = {
