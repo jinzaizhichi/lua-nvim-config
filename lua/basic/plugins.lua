@@ -201,6 +201,7 @@ packer.startup(
              --内置终端
              use {
                   "akinsho/toggleterm.nvim",
+                  "kdheepak/lazygit.nvim",
                   config = function()
                       require("conf.toggleterm")
                   end
