@@ -209,6 +209,13 @@ packer.startup(
                       require("conf.toggleterm")
                   end
              }
+             --undo tree
+             use {
+               "mbbill/undotree",
+               config = function()
+                   require("conf.undotree")
+               end
+             }
         end,
         --使用浮动窗口
         config = {

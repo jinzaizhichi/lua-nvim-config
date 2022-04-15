@@ -10,3 +10,5 @@ end
 vim.cmd("autocmd InsertLeave * call FcitxToggleInput()")
 --是否透明背景
 vim.g.background_transparency = true
+--指定undotree缓存存放路径
+vim.g.undotree_dir = "~/.cache/nvim/undodir"
