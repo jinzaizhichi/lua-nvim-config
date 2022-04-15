@@ -216,6 +216,13 @@ packer.startup(
                    require("conf.undotree")
                end
              }
+             --git copilot自动补全
+             use {
+               "github/copilot.vim",
+               config = function()
+                   require("conf.copilot")
+               end
+             }
         end,
         --使用浮动窗口
         config = {
