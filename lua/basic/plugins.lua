@@ -249,6 +249,10 @@ packer.startup(
                    require("conf.telescope")
                end
              }
+             --nordtheme
+             use {
+               "arcticicestudio/nord-vim",{"branch,develop"},
+             }
         end,
         --使用浮动窗口
         config = {
