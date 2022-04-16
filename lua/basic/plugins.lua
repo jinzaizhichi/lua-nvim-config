@@ -223,6 +223,13 @@ packer.startup(
                    require("conf.copilot")
                end
              }
+             --键位绑定器
+             use {
+               "folke/which-key.nvim",
+               config = function()
+                  require("conf.which-key")
+               end
+             }
         end,
         --使用浮动窗口
         config = {
