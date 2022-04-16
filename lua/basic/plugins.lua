@@ -230,6 +230,18 @@ packer.startup(
                   require("conf.which-key")
                end
              }
+             --模糊查找
+             use {
+               "nvim-telescope/telescope.nvim",
+               requires = {
+                  "nvim-lua/plenary.nvim", --lua开发的模块
+                  "BurntSushi/ripgrep", --文字查找
+                  "sharkdp/fd"   --文件查找
+                },
+               config = function()
+                   require("conf.telescope")
+               end
+             }
         end,
         --使用浮动窗口
         config = {
