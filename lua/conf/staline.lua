@@ -3,7 +3,7 @@
 --https://github.com/tamton-aquib/staline.nvim
 
 
-require('staliner').setup {
+require('staline').setup {
 	defaults = {
 		left_separator  = "",
 		right_separator = "",
