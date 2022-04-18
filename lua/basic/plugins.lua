@@ -253,6 +253,13 @@ packer.startup(
              use {
                "arcticicestudio/nord-vim",{"branch,develop"},
              }
+             --notify精美通知
+             use {
+               "rcarriga/nvim-notify",
+               config = function()
+                   require("conf.nvim-notify")
+               end
+             }
         end,
         --使用浮动窗口
         config = {
