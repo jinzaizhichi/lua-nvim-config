@@ -47,20 +47,20 @@ packer.startup(
                 end
             }
             --炫酷的状态栏插件
-            use {
-                "windwp/windline.nvim",
-                config = function()
-                    --插件加载完成后自动运行lua/conf/windline.lua文件中的代码
-                    require("conf.windline")
-                end
-            }
-            --staline状态栏插件
-            -- use {
-            --      "tamton-aquib/staline.nvim",
-            --      config = function()
-            --          require("conf.staline")
-            --      end
-            -- }
+            --use {
+            --    "windwp/windline.nvim",
+            --    config = function()
+            --        --插件加载完成后自动运行lua/conf/windline.lua文件中的代码
+            --        require("conf.windline")
+            --    end
+            --}
+           -- staline状态栏插件
+             use {
+                  "tamton-aquib/staline.nvim",
+                  config = function()
+                      require("conf.staline")
+                  end
+             }
 
 
             --为了让状态栏显示git状态，所以这个插件是必须的
