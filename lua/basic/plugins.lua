@@ -289,6 +289,13 @@ packer.startup(
                       require("conf.lspsaga")
                   end
              }
+             --lsp进度提示
+             use {
+                   "j-hui/fidget.nvim",
+                   config = function()
+                      require("conf.fidget")
+                   end
+             }
         end,
         --使用浮动窗口
         config = {
