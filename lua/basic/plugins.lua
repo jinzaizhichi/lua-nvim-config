@@ -296,6 +296,17 @@ packer.startup(
                       require("conf.fidget")
                    end
              }
+             --语法高亮
+             use {
+                   "nvim-treesitter/nvim-treesitter",
+                   run = {":TSupdate"},
+                   requires = {
+                        "p00f/nvim-ts-rainbow"  --彩虹括号
+                   },
+                   config = function()
+                      require("conf.nvim-treesitter")
+                   end
+             }
         end,
         --使用浮动窗口
         config = {
