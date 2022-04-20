@@ -6,15 +6,15 @@ local lsp_installer_servers = require("nvim-lsp-installer.servers")
 local servers = {
     -- 语言服务器名称：配置选项
     sumneko_lua = require("lsp.sumneko_lua"),
-    -- pyright = require("lsp.pyright"),
-    -- tsserver = require("lsp.tsserver"),
-    -- html = require("lsp.html"),
-    -- cssls = require("lsp.cssls"),
-    -- gopls = require("lsp.gopls"),
-    -- jsonls = require("lsp.jsonls"),
-    -- zeta_note = require("lsp.zeta_note"),
-    -- sqls = require("lsp.sqls"),
-    -- vuels = require("lsp.vuels")
+    pyright = require("lsp.pyright"),
+    tsserver = require("lsp.tsserver"),
+    html = require("lsp.html"),
+    cssls = require("lsp.cssls"),
+    gopls = require("lsp.gopls"),
+    jsonls = require("lsp.jsonls"),
+    zeta_note = require("lsp.zeta_note"),
+    sqls = require("lsp.sqls"),
+    vuels = require("lsp.vuels")
 }
 -- 这里是 LSP 服务启动后的按键加载
 local function attach(_, bufnr)
