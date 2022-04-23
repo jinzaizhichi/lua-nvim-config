@@ -321,6 +321,10 @@ packer.startup(
                      require("conf.nvim-lightbulb")
                   end
              }
+             --virtualenv
+             use {
+                  "jmcantrell/vim-virtualenv"
+             }
         end,
         --使用浮动窗口
         config = {
